@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CEA061CB283E6BDF00F41645 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA061CA283E6BDF00F41645 /* main.swift */; };
+		CEA061D6283E6FF700F41645 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA061D5283E6FF700F41645 /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		CEA061C7283E6BDF00F41645 /* ICS4U-Culminating */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ICS4U-Culminating"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA061CA283E6BDF00F41645 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CEA061D4283E6F3F00F41645 /* Input */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input; sourceTree = "<group>"; };
+		CEA061D5283E6FF700F41645 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,8 @@
 		CEA061BE283E6BDF00F41645 = {
 			isa = PBXGroup;
 			children = (
+				CEA061D3283E6F1100F41645 /* Graph */,
+				CEA061D1283E6ED700F41645 /* Model */,
 				CEA061C9283E6BDF00F41645 /* ICS4U-Culminating */,
 				CEA061C8283E6BDF00F41645 /* Products */,
 			);
@@ -60,6 +65,22 @@
 				CEA061CA283E6BDF00F41645 /* main.swift */,
 			);
 			path = "ICS4U-Culminating";
+			sourceTree = "<group>";
+		};
+		CEA061D1283E6ED700F41645 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA061D5283E6FF700F41645 /* Node.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA061D3283E6F1100F41645 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				CEA061D4283E6F3F00F41645 /* Input */,
+			);
+			path = Graph;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA061CB283E6BDF00F41645 /* main.swift in Sources */,
+				CEA061D6283E6FF700F41645 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
