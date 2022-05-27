@@ -92,7 +92,7 @@ let nodes = [
     
     ,
     
-    Node(id: 20, paragraphs: <#T##[String]#>, image: nil, edges: <#T##[Int]#>)
+    Node(id: 20, paragraphs: ["You go to the fancy restaurant."], image: nil, edges: <#T##[Int]#>)
     
     ,
     
@@ -104,23 +104,23 @@ let nodes = [
     
     ,
     
-    Node(id: 23, paragraphs: <#T##[String]#>, image: <#T##String?#>, edges: <#T##[Int]#>)
+    Node(id: 23, paragraphs: <#T##[String]#>, image: nil, edges: <#T##[Int]#>)
     
     ,
     
-    Node(id: 24, paragraphs: <#T##[String]#>, image: <#T##String?#>, edges: <#T##[Int]#>)
+    Node(id: 24, paragraphs: <#T##[String]#>, image: nil, edges: <#T##[Int]#>)
     
     ,
     
-    Node(id: 25, paragraphs: <#T##[String]#>, image: <#T##String?#>, edges: <#T##[Int]#>)
+    Node(id: 25, paragraphs: <#T##[String]#>, image: nil, edges: <#T##[Int]#>)
     
     ,
     
-    Node(id: 26, paragraphs: <#T##[String]#>, image: <#T##String?#>, edges: <#T##[Int]#>)
+    Node(id: 26, paragraphs: <#T##[String]#>, image: nil, edges: <#T##[Int]#>)
     
     ,
     
-    Node(id: 27, paragraphs: <#T##[String]#>, image: <#T##String?#>, edges: <#T##[Int]#>)
+    Node(id: 27, paragraphs: <#T##[String]#>, image: nil, edges: <#T##[Int]#>)
     
     ,
     
