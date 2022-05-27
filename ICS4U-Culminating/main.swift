@@ -10,3 +10,4 @@ import Foundation
 let TimmyDeathCounter = 0
 
 print("Hello, World!")
+print("You have killed timmy \(TimmyDeathCounter) times")
