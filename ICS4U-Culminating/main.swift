@@ -7,5 +7,6 @@
 
 import Foundation
 
-print("Hello, World!")
+let TimmyDeathCounter = 0
 
+print("Hello, World!")
