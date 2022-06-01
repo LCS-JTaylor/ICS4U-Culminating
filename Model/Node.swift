@@ -66,75 +66,67 @@ let nodes = [
     
     ,
     
-    Node(id: 11, paragraphs: ["Truck splashes you."], image: nil, edges: [Edge(destinationId: 12, prompt: nil)], ending: false)
+    Node(id: 11, paragraphs: ["As you reach down into the sewer, the smell is indescribable; you've never smelt anything worse. Just as you begin reaching down for the keys a giant hot dog truck passes by you and splashes a puddle of water all over you. Which only results in you smelling terribly and covered in waste."], image: nil, edges: [Edge(destinationId: 12, prompt: nil)], ending: false)
     
     ,
     
-    Node(id: 12, paragraphs: ["You go to class and are bullied because you are wet and smelly. do you fight back? or do you do nothing?"], image: nil, edges: [Edge(destinationId: 13, prompt: nil), Edge(destinationId: 14, prompt: nil)], ending: false)
+    Node(id: 12, paragraphs: ["You finally end up making it to class in time and slowly try to sneak in the back of the class and avoid anyone from smelling you or making eye contact with you.  As you reach the bug everyone turns around and carefully looks at you, Derek the high school bully starts making fun of the way you look and the way you smell the whole class laughs You're overcome with shame and embarrassment."], image: nil, edges: [Edge(destinationId: 13, prompt: "If you decide to stand up to Derek go to Node 13"), Edge(destinationId: 14, prompt: "If you decide to do nothing to not draw more attention to yourself go to Node 14")], ending: false)
     
     ,
     
-    Node(id: 13, paragraphs: ["You decide to do something about it. do you attack him? or curse his family?"], image: nil, edges: [Edge(destinationId: 15, prompt: nil), Edge(destinationId: 16, prompt: nil)], ending: <#Bool#>)
+    Node(id: 13, paragraphs: ["You decide to stand on top of a table in front of the class, And make sure everyone catches your attention. You don't want to be remembered as a new kid who smelled bad and showed up late to class, Derek has publicly humiliated you and you want to get back at him."], image: nil, edges: [Edge(destinationId: 15, prompt: "If you decide to attack him mentally go to Node 15"), Edge(destinationId: 16, prompt: "If you decide to attack him physically go to Node 16")], ending: false)
     
     ,
     
-    Node(id: 14, paragraphs: ["You just sat there and took the beating."], image: nil, edges: [Edge(destinationId: 17, prompt: nil)], ending: <#Bool#>)
+    Node(id: 14, paragraphs: ["You let Derek completely ruin your social reputation and the whole class laughs at you. The teacher tells everyone to settle down and focus on the lesson. You sit down for the rest of the period and focus in  class. You make eye contact with this beautiful girl and wonder if she's even looking at you."], image: nil, edges: [Edge(destinationId: 17, prompt: "Continue")], ending: false)
     
     ,
     
-    Node(id: 15, paragraphs: ["You curse his family"], image: nil, edges: [Edge(destinationId: 28, prompt: nil)], ending: <#Bool#>)
+    Node(id: 15, paragraphs: ["You get down from the table and get on Derek's eye level. You proceed to make fun of Derek and the way he dresses and how his father was absent in his life. You humiliate him publicly for having terrible grades, and how his only personality trait is to be a douchebag. The whole class starts laughing and cheering you on but suddenly the teacher calls the principal and you get sentenced to detention."], image: nil, edges: [Edge(destinationId: 28, prompt: "Continue")], ending: false)
     
     ,
     
-    Node(id: 16, paragraphs: ["You attack him"], image: nil, edges: [Edge(destinationId: 28, prompt: nil)], ending: <#Bool#>)
+    Node(id: 16, paragraphs: ["You jumped down from the table and pushed Derek on the corner next to the classroom. You get close to him and decide to Punch him across the face,  his nose snaps in two and his teeth fall out. You continue beating him as a whole class watches and is completely traumatized,  one of the students runs out and gets the principal you are now sentenced to detention and potentially could be expelled."], image: nil, edges: [Edge(destinationId: 28, prompt: "Continue")], ending: false)
     
     ,
     
-    Node(id: 17, paragraphs: ["A girl comes up to you afterwards and asks if you want to see here later?"], image: nil, edges: [Edge(destinationId: 18, prompt: nil), Edge(destinationId: 19, prompt: nil)], ending: <#Bool#>)
+    Node(id: 17, paragraphs: ["She comes up to you after class, and expresses how bad she feels for you and she wonders if you wanna hangout with her after class. She talks to you about Derek and how they used to date but she got fed up with how he was constantly rude. He was to everyone. She wants to get to know you."], image: nil, edges: [Edge(destinationId: 18, prompt: "If you decide to get to know her go to Node 18"), Edge(destinationId: 19, prompt: "If you decide to stay away from trouble, especially anything to do with Derek, go to Node 19")], ending: false)
     
     ,
     
-    Node(id: 18, paragraphs: ["you decide to meet up later, where do you go together, Harveys or the Itallian place?"], image: nil, edges: [Edge(destinationId: 20, prompt: nil), Edge(destinationId: 21, prompt: nil)], ending: <#Bool#>)
+    Node(id: 18, paragraphs: ["You go to meet Claire after school, she waits for you after class and makes eye contact with Derek. You wanna get out of school and meet somewhere else where people can’t see you guys hanging out, where do you go?"], image: nil, edges: [Edge(destinationId: 20, prompt: "If you decide to take Claire on a date to a fancy restaurant called Nora Grey, go to node 20"), Edge(destinationId: 21, prompt: "If you decide to take Claire on a date to Harveys for their great burgers, go to Node 21")], ending: false)
     
     ,
     
-    Node(id: 19, paragraphs: [], image: nil, edges: [], ending: <#Bool#>)
+    Node(id: 19, paragraphs: ["You decide to ignore her and avoid drama, you get to know everyone else. Have a happy senior year for the rest of the year. Attend clubs, parties and everyone forgets about the incident about the smell. You make an unforgettable friend group and graduate.", "ENDING: HAPPILY EVER AFTER"], image: nil, edges: [], ending: true)
     
     ,
     
-    Node(id: 20, paragraphs: ["You go to the fancy restaurant."], image: nil, edges: [Edge(destinationId: 22, prompt: nil)], ending: <#Bool#>)
+    Node(id: 20, paragraphs: ["You go to Nora Grey, she orders some food and so do you. You get to know her through the time you spend together. You make jokes and even make her laugh, you see there's so much more to Claire than you used to think. You see yourself wanting to spend more time with her."], image: nil, edges: [Edge(destinationId: 22, prompt: "Continue")], ending: false)
     
     ,
     
-    Node(id: 21, paragraphs: [], image: nil, edges: [Edge(destinationId: 24, prompt: nil), Edge(destinationId: 25, prompt: nil)], ending: <#Bool#>)
+    Node(id: 21, paragraphs: ["You end up going to Harvey’s, since you are on a tight budget and don’t fully trust Claire. You get there and look at the menu and bicker over what you wanna get, as you guys make the choice, the cashier comes up to you guys only to realize that. It’s Derek and he works at Harvey’s, he realizes you and Claire and on a date. He jumps over the counter and begins to chase you."], image: nil, edges: [Edge(destinationId: 24, prompt: "If you decide to run away from him go to Node 24"), Edge(destinationId: 25, prompt: "If you decide to just take the hit go to Node 25")], ending: false)
     
     ,
     
-    Node(id: 22, paragraphs: [], image: nil, edges: [Edge(destinationId: 23, prompt: nil)], ending: <#Bool#>)
+    Node(id: 22, paragraphs: ["You and Claire begin to spend more time together, and she becomes closer to you. You expected that she would leave to go back with Derek but she sticks around and makes the most out of the opportunity. You slowly end up falling in love with her."], image: nil, edges: [Edge(destinationId: 23, prompt: "Continue")], ending: false)
     
     ,
     
-    Node(id: 23, paragraphs: [], image: nil, edges: [], ending: <#Bool#>)
+    Node(id: 23, paragraphs: ["You decide to begin dating Claire, everyone in school finds out. All the guys are jealous of you and now have gained respect for you. Girls keep asking you if you wanna hangout with them but you are madly in love with Claire, Derek is now hated by the whole school and is forgotten by everyone. You graduate and propose to Claire.", "ENDING: HAPPILY EVER AFTER"], image: nil, edges: [], ending: true)
     
     ,
     
-    Node(id: 24, paragraphs: [], image: nil, edges: [Edge(destinationId: 26, prompt: nil)], ending: <#Bool#>)
+    Node(id: 24, paragraphs: ["You try to run away from Derek. Claire is embarrassed at the fact that you took her on a date where her ex-boyfriend works.  You slip on a pickle that was left on the ground and Derek eventually gets to you.", "ENDING: BAD"], image: nil, edges: [Edge(destinationId: 26, prompt: nil)], ending: <#Bool#>)
     
     ,
     
-    Node(id: 25, paragraphs: [], image: nil, edges: [Edge(destinationId: 27, prompt: nil)], ending: <#Bool#>)
+    Node(id: 25, paragraphs: ["You accept your fate and take the hit from him. He beats you up repeatedly and leaves you barely breathing. You end up having to go to the hospital and later you find out Derek and Claire got back together.", "ENDING BAD"], image: nil, edges: [], ending: true)
     
     ,
     
-    Node(id: 26, paragraphs: [], image: nil, edges: [Edge(destinationId: 27, prompt: nil)], ending: <#Bool#>)
-    
-    ,
-    
-    Node(id: 27, paragraphs: [], image: nil, edges: [], ending: <#Bool#>)
-    
-    ,
-    
-    Node(id: 28, paragraphs: ["Detention!"], image: nil, edges: [], ending: <#Bool#>)
+    Node(id: 28, paragraphs: ["ENDING: DETENTION"], image: nil, edges: [], ending: true)
     
     ,
     
