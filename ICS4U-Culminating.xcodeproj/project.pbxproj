@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7D71602847B79E005B2C1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D715F2847B79E005B2C1B /* ContentView.swift */; };
+		CE7D71622847B7AA005B2C1B /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D71612847B7AA005B2C1B /* NodeView.swift */; };
 		CEA061CB283E6BDF00F41645 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA061CA283E6BDF00F41645 /* main.swift */; };
 		CEA061D6283E6FF700F41645 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA061D5283E6FF700F41645 /* Node.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE7D715F2847B79E005B2C1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE7D71612847B7AA005B2C1B /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
 		CEA061C7283E6BDF00F41645 /* ICS4U-Culminating */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ICS4U-Culminating"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA061CA283E6BDF00F41645 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CEA061D4283E6F3F00F41645 /* Input */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input; sourceTree = "<group>"; };
@@ -41,9 +45,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE7D715E2847B785005B2C1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D715F2847B79E005B2C1B /* ContentView.swift */,
+				CE7D71612847B7AA005B2C1B /* NodeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CEA061BE283E6BDF00F41645 = {
 			isa = PBXGroup;
 			children = (
+				CE7D715E2847B785005B2C1B /* View */,
 				CEA061D3283E6F1100F41645 /* Graph */,
 				CEA061D1283E6ED700F41645 /* Model */,
 				CEA061C9283E6BDF00F41645 /* ICS4U-Culminating */,
@@ -143,6 +157,8 @@
 			files = (
 				CEA061CB283E6BDF00F41645 /* main.swift in Sources */,
 				CEA061D6283E6FF700F41645 /* Node.swift in Sources */,
+				CE7D71622847B7AA005B2C1B /* NodeView.swift in Sources */,
+				CE7D71602847B79E005B2C1B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

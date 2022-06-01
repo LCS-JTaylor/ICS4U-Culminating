@@ -15,7 +15,7 @@ struct Node: Identifiable {
     let ending: Bool
 }
 
-struct Edge {
+struct Edge: Hashable {
     let destinationId: Int
     let prompt: String?
 }
