@@ -29,6 +29,8 @@ struct ContentView: View {
         // If we cannot do so, return an empty node
         // (we use the nil coalescing operator ?? to do this)
         return nodes[activeNode] ?? emptyNode
+        
+        //need to fix empty node
     }
     
     // User interface
