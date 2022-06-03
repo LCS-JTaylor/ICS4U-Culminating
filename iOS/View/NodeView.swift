@@ -44,7 +44,7 @@ struct NodeView: View {
                     HStack {
                         Spacer()
                         
-                        Text(currentEdge.prompt!)
+                        Text(currentEdge.prompt)
                             .padding()
                             .multilineTextAlignment(.trailing)
                             .onTapGesture {

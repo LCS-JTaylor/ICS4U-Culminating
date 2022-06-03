@@ -17,13 +17,15 @@ struct Node: Identifiable {
 
 struct Edge: Hashable {
     let destinationId: Int
-    let prompt: String?
+    let prompt: String
 }
+
+let emptyNode = Node(id: 0, paragraphs: [], image: nil, edges: [], ending: false)
 
 let nodes = [
     
     1 : Node (id: 1, paragraphs: ["Highschool: Love or Crime by Team Infinity"],
-              image: nil, edges: [Edge(destinationId: 2, prompt: nil)], ending: false)
+              image: nil, edges: [Edge(destinationId: 2, prompt: "Continue")], ending: false)
 
         ,
         
@@ -47,15 +49,15 @@ let nodes = [
         
         ,
         
-    6 : Node (id: 6, paragraphs: ["You begin to run as you know you can’t be late on your first day, you try and try to run as fast you can. You start to imagine what everyone will think of you and how they will judge you for being new and showing up late. All the overthinking leads to you getting distracted and you realize your keys just dropped out of your pocket and have fallen into the sewer. "], image: nil, edges: [Edge(destinationId: 10, prompt: nil)], ending: false)
+    6 : Node (id: 6, paragraphs: ["You begin to run as you know you can’t be late on your first day, you try and try to run as fast you can. You start to imagine what everyone will think of you and how they will judge you for being new and showing up late. All the overthinking leads to you getting distracted and you realize your keys just dropped out of your pocket and have fallen into the sewer. "], image: nil, edges: [Edge(destinationId: 10, prompt: "Continue")], ending: false)
         
         ,
         
-    7 : Node (id: 7, paragraphs: ["You find your way towards the front of the bus where the steering wheel lies, you grab the drunk bus driver and pull him off his seat forcing him to ragdoll on the ground. You sit down and try to take control of the situation. As you sit down, you remember that you were too lazy to get your driver's license in the summer and don't know how to drive."], image: nil, edges: [Edge(destinationId: 29, prompt: nil)], ending: false)
+    7 : Node (id: 7, paragraphs: ["You find your way towards the front of the bus where the steering wheel lies, you grab the drunk bus driver and pull him off his seat forcing him to ragdoll on the ground. You sit down and try to take control of the situation. As you sit down, you remember that you were too lazy to get your driver's license in the summer and don't know how to drive."], image: nil, edges: [Edge(destinationId: 29, prompt: "Continue")], ending: false)
         
         ,
         
-    8 : Node (id: 8, paragraphs: ["You don't care about anyone else and decide to save yourself by jumping out of the bus. You open up the emergency window and jump out, falling on grass continuously rolling. "], image: nil, edges: [Edge(destinationId: 30, prompt: nil)], ending: false)
+    8 : Node (id: 8, paragraphs: ["You don't care about anyone else and decide to save yourself by jumping out of the bus. You open up the emergency window and jump out, falling on grass continuously rolling. "], image: nil, edges: [Edge(destinationId: 30, prompt: "Continue")], ending: false)
         
         ,
         
@@ -63,11 +65,11 @@ let nodes = [
         
         ,
         
-    10 : Node (id: 10, paragraphs: ["You know  how upset your mother will be if you lose the house keys, and how are you going to get home at the end of the day. Both your parents work late night shifts as they are doctors, you remember a trick your mother taught you when things get stuck, you crouch down and begin to try and pick them up."], image: nil, edges: [Edge(destinationId: 11, prompt: nil)], ending: false)
+    10 : Node (id: 10, paragraphs: ["You know  how upset your mother will be if you lose the house keys, and how are you going to get home at the end of the day. Both your parents work late night shifts as they are doctors, you remember a trick your mother taught you when things get stuck, you crouch down and begin to try and pick them up."], image: nil, edges: [Edge(destinationId: 11, prompt: "Continue")], ending: false)
         
         ,
         
-    11 : Node (id: 11, paragraphs: ["As you reach down into the sewer, the smell is indescribable; you've never smelt anything worse. Just as you begin reaching down for the keys a giant hot dog truck passes by you and splashes a puddle of water all over you. Which only results in you smelling terribly and covered in waste."], image: nil, edges: [Edge(destinationId: 12, prompt: nil)], ending: false)
+    11 : Node (id: 11, paragraphs: ["As you reach down into the sewer, the smell is indescribable; you've never smelt anything worse. Just as you begin reaching down for the keys a giant hot dog truck passes by you and splashes a puddle of water all over you. Which only results in you smelling terribly and covered in waste."], image: nil, edges: [Edge(destinationId: 12, prompt: "Continue")], ending: false)
         
         ,
         
@@ -119,7 +121,7 @@ let nodes = [
         
         ,
         
-    24 : Node (id: 24, paragraphs: ["You try to run away from Derek. Claire is embarrassed at the fact that you took her on a date where her ex-boyfriend works.  You slip on a pickle that was left on the ground and Derek eventually gets to you.", "ENDING: BAD"], image: nil, edges: [Edge(destinationId: 26, prompt: nil)], ending: <#Bool#>)
+    24 : Node (id: 24, paragraphs: ["You try to run away from Derek. Claire is embarrassed at the fact that you took her on a date where her ex-boyfriend works.  You slip on a pickle that was left on the ground and Derek eventually gets to you.", "ENDING: BAD"], image: nil, edges: [Edge(destinationId: 26, prompt: "Continue")], ending: true)
         
         ,
         
@@ -132,7 +134,7 @@ let nodes = [
         ,
         
     29 : Node (id: 29, paragraphs: ["You try to take control of the bus’s direction and straighten it out, you close your eyes and take a deep breath not realizing that you are about to lead everyone on the bus (including little Timmy) to their death by driving into another vehicle. You swerve to the right trying to avoid them and run into a tree killing everybody on the bus (including little Timmy).",
-                                  "ENDING: DEATH"], image: nil, edges: [], ending: <#Bool#>)
+                                  "ENDING: DEATH"], image: nil, edges: [], ending: true)
         
         ,
         

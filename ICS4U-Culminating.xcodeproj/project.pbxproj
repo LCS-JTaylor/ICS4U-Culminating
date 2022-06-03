@@ -7,35 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE7D71602847B79E005B2C1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D715F2847B79E005B2C1B /* ContentView.swift */; };
-		CE7D71622847B7AA005B2C1B /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D71612847B7AA005B2C1B /* NodeView.swift */; };
-		CEA061CB283E6BDF00F41645 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA061CA283E6BDF00F41645 /* main.swift */; };
-		CEA061D6283E6FF700F41645 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA061D5283E6FF700F41645 /* Node.swift */; };
+		CE419186284A44B80059D5AF /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE419185284A44B80059D5AF /* iOSApp.swift */; };
+		CE41918A284A44BA0059D5AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE419189284A44BA0059D5AF /* Assets.xcassets */; };
+		CE41918D284A44BA0059D5AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE41918C284A44BA0059D5AF /* Preview Assets.xcassets */; };
+		CE419191284A45400059D5AF /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA061D5283E6FF700F41645 /* Node.swift */; };
+		CE419192284A45400059D5AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D715F2847B79E005B2C1B /* ContentView.swift */; };
+		CE419193284A45400059D5AF /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D71612847B7AA005B2C1B /* NodeView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		CEA061C5283E6BDF00F41645 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		CE419183284A44B80059D5AF /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE419185284A44B80059D5AF /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		CE419189284A44BA0059D5AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE41918C284A44BA0059D5AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE7D715F2847B79E005B2C1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE7D71612847B7AA005B2C1B /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
-		CEA061C7283E6BDF00F41645 /* ICS4U-Culminating */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ICS4U-Culminating"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA061CA283E6BDF00F41645 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CEA061D4283E6F3F00F41645 /* Input */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input; sourceTree = "<group>"; };
 		CEA061D5283E6FF700F41645 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CEA061C4283E6BDF00F41645 /* Frameworks */ = {
+		CE419180284A44B80059D5AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +37,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE419184284A44B80059D5AF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CE419185284A44B80059D5AF /* iOSApp.swift */,
+				CEA061D3283E6F1100F41645 /* Graph */,
+				CEA061D1283E6ED700F41645 /* Model */,
+				CE7D715E2847B785005B2C1B /* View */,
+				CE419189284A44BA0059D5AF /* Assets.xcassets */,
+				CE41918B284A44BA0059D5AF /* Preview Content */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		CE41918B284A44BA0059D5AF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE41918C284A44BA0059D5AF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		CE7D715E2847B785005B2C1B /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -57,10 +70,7 @@
 		CEA061BE283E6BDF00F41645 = {
 			isa = PBXGroup;
 			children = (
-				CE7D715E2847B785005B2C1B /* View */,
-				CEA061D3283E6F1100F41645 /* Graph */,
-				CEA061D1283E6ED700F41645 /* Model */,
-				CEA061C9283E6BDF00F41645 /* ICS4U-Culminating */,
+				CE419184284A44B80059D5AF /* iOS */,
 				CEA061C8283E6BDF00F41645 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,17 +78,9 @@
 		CEA061C8283E6BDF00F41645 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEA061C7283E6BDF00F41645 /* ICS4U-Culminating */,
+				CE419183284A44B80059D5AF /* iOS.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CEA061C9283E6BDF00F41645 /* ICS4U-Culminating */ = {
-			isa = PBXGroup;
-			children = (
-				CEA061CA283E6BDF00F41645 /* main.swift */,
-			);
-			path = "ICS4U-Culminating";
 			sourceTree = "<group>";
 		};
 		CEA061D1283E6ED700F41645 /* Model */ = {
@@ -100,22 +102,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEA061C6283E6BDF00F41645 /* ICS4U-Culminating */ = {
+		CE419182284A44B80059D5AF /* iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEA061CE283E6BDF00F41645 /* Build configuration list for PBXNativeTarget "ICS4U-Culminating" */;
+			buildConfigurationList = CE419190284A44BA0059D5AF /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
-				CEA061C3283E6BDF00F41645 /* Sources */,
-				CEA061C4283E6BDF00F41645 /* Frameworks */,
-				CEA061C5283E6BDF00F41645 /* CopyFiles */,
+				CE41917F284A44B80059D5AF /* Sources */,
+				CE419180284A44B80059D5AF /* Frameworks */,
+				CE419181284A44B80059D5AF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "ICS4U-Culminating";
-			productName = "ICS4U-Culminating";
-			productReference = CEA061C7283E6BDF00F41645 /* ICS4U-Culminating */;
-			productType = "com.apple.product-type.tool";
+			name = iOS;
+			productName = iOS;
+			productReference = CE419183284A44B80059D5AF /* iOS.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -127,7 +129,7 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					CEA061C6283E6BDF00F41645 = {
+					CE419182284A44B80059D5AF = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -145,26 +147,101 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEA061C6283E6BDF00F41645 /* ICS4U-Culminating */,
+				CE419182284A44B80059D5AF /* iOS */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		CE419181284A44B80059D5AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE41918D284A44BA0059D5AF /* Preview Assets.xcassets in Resources */,
+				CE41918A284A44BA0059D5AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		CEA061C3283E6BDF00F41645 /* Sources */ = {
+		CE41917F284A44B80059D5AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA061CB283E6BDF00F41645 /* main.swift in Sources */,
-				CEA061D6283E6FF700F41645 /* Node.swift in Sources */,
-				CE7D71622847B7AA005B2C1B /* NodeView.swift in Sources */,
-				CE7D71602847B79E005B2C1B /* ContentView.swift in Sources */,
+				CE419191284A45400059D5AF /* Node.swift in Sources */,
+				CE419192284A45400059D5AF /* ContentView.swift in Sources */,
+				CE419193284A45400059D5AF /* NodeView.swift in Sources */,
+				CE419186284A44B80059D5AF /* iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		CE41918E284A44BA0059D5AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = T5P6TDLT2T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.angusmcaloon.iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE41918F284A44BA0059D5AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = T5P6TDLT2T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.angusmcaloon.iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		CEA061CC283E6BDF00F41645 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -280,45 +357,23 @@
 			};
 			name = Release;
 		};
-		CEA061CF283E6BDF00F41645 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T5P6TDLT2T;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		CEA061D0283E6BDF00F41645 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T5P6TDLT2T;
-				ENABLE_HARDENED_RUNTIME = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE419190284A44BA0059D5AF /* Build configuration list for PBXNativeTarget "iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE41918E284A44BA0059D5AF /* Debug */,
+				CE41918F284A44BA0059D5AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEA061C2283E6BDF00F41645 /* Build configuration list for PBXProject "ICS4U-Culminating" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEA061CC283E6BDF00F41645 /* Debug */,
 				CEA061CD283E6BDF00F41645 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CEA061CE283E6BDF00F41645 /* Build configuration list for PBXNativeTarget "ICS4U-Culminating" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEA061CF283E6BDF00F41645 /* Debug */,
-				CEA061D0283E6BDF00F41645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
