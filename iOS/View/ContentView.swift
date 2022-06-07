@@ -9,6 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     
+//    var timmyDeathCounter = 0
+//    mutating func addTimmyDeath(){
+//        if currentNode.timmyDeath == true{
+//            timmyDeathCounter += 1
+//        }
+//    }
+    
     // MARK: Stored properties (store things)
     
     // What page are we on?
@@ -49,6 +56,15 @@ struct ContentView: View {
             // Game is being played
             // Show the node
             NodeView(node: currentNode, activeNode: $activeNode)
+            
+        }
+        
+        if currentNode.ending == true{
+            
+//            addTimmyDeath()
+            
+            Text("Player Statistics")
+            Text("You have killed Timmy _ times")
             
         }
         
