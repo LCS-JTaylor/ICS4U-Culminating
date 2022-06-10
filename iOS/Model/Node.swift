@@ -71,7 +71,7 @@ let nodes = [
         ,
         
     2 : Node (id: 2, paragraphs: ["You are a new student in high school, you and your parents just moved from a small town. You’ve been homeschooled from Grade 9 to Grade 11 and are attending Grade 12 this year. You wake up, brush your teeth and get ready for school. Your mother made you breakfast and you realize you’re running late for class.",],
-             image: nil, edges: [Edge(destinationId: 3, prompt: "If you decide to take the bus go to Node 3"), Edge(destinationId: 4, prompt: "If you decide to walk to school go to Node 4")], ending: nil, timmyDeath: false)
+              image: nil, edges: [Edge(destinationId: 3, prompt: "If you decide to take the bus go to Node 3"), Edge(destinationId: 4, prompt: "If you decide to walk to school go to Node 4")], ending: nil, timmyDeath: false)
         
         ,
         

@@ -46,9 +46,16 @@ struct ContentView: View {
         if gameIsOn == false {
             
             // Welcome screen
-            Text("Welcome!")
+            Text("Press to Play!")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .lineLimit(nil)
+                .padding(.all, 16.0)
+                .background(Color.red)
+                .accentColor(Color.white)
                 .onTapGesture {
                     startGame()
+                
                 }
             
         } else {
@@ -59,16 +66,17 @@ struct ContentView: View {
             
         }
         
-        if currentNode.ending == true{
+        if (currentNode.ending != nil) == true{
             
-//            addTimmyDeath()
+
             
             Text("Player Statistics")
             Text("You have killed Timmy _ times")
             
         }
-        
+            
     }
+    
     
     // MARK: Functions (do things)
     
@@ -83,5 +91,11 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.light)
+            .environment(\.sizeCategory, .extraExtraExtraLarge)
+            
+            
+            
+            
     }
 }
